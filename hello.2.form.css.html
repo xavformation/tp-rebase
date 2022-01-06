@@ -1,0 +1,97 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <title>Découvrir Html et Css</title>
+    <meta charset="utf-8" />
+    <!-- view port permet de faire du Responsive . L'affichage s'adapte automatiquement en fonction du device-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./css/my-form.css" rel="stylesheet" />
+
+</head>
+
+<body>
+    <h1>Mon Premier formulaire</h1>
+    <h2>Image Title</h2>
+
+    <form method="post" action="">
+
+        <label for="fname" class="inline">First name:</label>
+        <br>
+        <input type="text" id="fname" name="fname" required>
+        <br>
+        <label for="lname" class="inline">Last name:</label>
+        <br>
+        <input type="text" id="lname" name="lname" required>
+
+        <!-- avec Number -->
+        <fieldset>
+            <legend>My Favorite Number between 0 and 10: </legend>
+            <input type="number" id="favoriteNumber" name="favoriteNumber" value=0 min=0 max=10>
+        </fieldset>
+
+        <!-- avec Des Radio Button -->
+        <fieldset>
+            <legend> My Gender : </legend>
+            <input type="radio" id="male" name="gender" value="male">
+            <label for="male" class="inline">Male</label>
+            <br>
+            <input type="radio" id="female" name="gender" value="female">
+            <label for="female" class="inline">Female</label>
+            <br>
+        </fieldset>
+
+
+        <!-- avec Des CheckBox -->
+        <fieldset>
+            <legend> My favorite music : </legend>
+           
+            <input type="checkbox" id="music1" name="music1" value="Jazz">
+            <label for="music1" class="inline">I like Jazz</label>
+            <br>
+
+            <input type="checkbox" id="music2" name="music2" value="Classic">
+            <label for="music2" class="inline">I like Classic</label>
+            <br>
+            <input type="checkbox" id="music3" name="music3" value="Pop">
+            <label for="music3" class="inline">I like Pop</label>
+            <br>
+           
+        </fieldset>
+
+        <br>
+
+        <!-- avec Des Select -->
+        <fieldset>
+            <legend> My favorite continents</legend>
+            <label for="continents">my continents:</label>
+            <br>
+            <select id="continents" name="continents" size="4" multiple>
+                <option value="Africa">Africa</option>
+                <option value="America">America</option>
+                <option value="Asia">Asia</option>
+                <option value="Europe">Europe</option>
+                <option value="Oceania">Oceania</option>
+            </select>
+        </fieldset>
+
+
+        <!-- avec Des Datalistes (HTML5) -->
+        <fieldset>
+            <legend> My favorite Beers</legend>
+            <label for="beers">I really enjoy :</label>
+            <input list="proposed_beers" type="text" id="beers">
+            <datalist id="proposed_beers">
+                <option value="Meteor">
+                <option value="Pils">
+                <option value="Kronenbourg">
+                <option value="Grimbergen">
+            </datalist>
+        </fieldset>
+
+        <input type="submit" value="Envoyer" />
+    </form>
+
+</body>
+
+</html>

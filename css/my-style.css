@@ -1,0 +1,128 @@
+/*
+Selecteur par type ; h1 , li, img, p
+*/
+h1 {
+    color: red;
+    text-decoration: blink;
+}
+
+li {
+    color : blueviolet;
+}
+
+img {
+    border:6px solid green; 
+}
+
+p {
+    text-decoration: blink;
+}
+
+p::first-letter {
+   text-transform: uppercase;
+   color:red;
+}
+
+ /* pseudo-classes sur les liens */
+ a {  
+    text-decoration: wavy ;  
+ }  
+ a:link {  
+    background-color: rgb(230, 230, 11) ;  
+ }  
+ a:visited {  
+    background-color: lightblue ;  
+ }  
+ a:hover {  
+    background-color: lightgreen ;  
+ }  
+ a:active {  
+    background-color: lightpink ;  
+ }  
+/*
+Selecteur par classe : .
+*/
+ .myclass {
+     color : gold ;
+     font-family: Verdana, Arial, Helvetica, sans-serif;
+ }
+
+ .special {
+     color: hotpink;
+     font-family: Helvetica, sans-serif;
+ }
+/*
+Selecteur par id : #
+*/
+ #myid {
+    color: orangered;
+    font-family: Arial, sans-serif;
+    font-size: 40px;
+    font-style: italic;
+    border:6px solid green; 
+ }
+
+ /* Selecteur par attribut : []*/
+ h1[myattribute] {
+    color: orangered;
+    font-family: Arial, sans-serif;
+    font-size: 40px;
+    font-style: italic;
+    border:6px solid green; 
+ }
+
+ img[myattribute] {
+    font-family: Arial, sans-serif;
+    font-size: 40px;
+    font-style: italic;
+    border:6px solid orange; 
+ }
+
+ /* Défi 
+ Tous les Strong de page
+ */
+ strong {
+    color: red;
+    font-family: Verdana;
+    font-size: 25px;
+    font-style: italic;
+ }
+
+
+ /* formatter la table */
+ table {
+    border: 1px solid black;
+    width: 100%;
+ }
+ 
+
+ th {
+    border: 1px solid rgb(224, 12, 12);
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #4CAF50;
+    color: white;
+ }
+
+ 
+ td {
+     border : 1px solid #ddd
+ }
+
+
+ tr:nth-child(even) {
+     background-color: #f2f2f2
+ }
+
+ tr:hover{
+    background-color: #ddd
+}
+
+ tr:nth-last-child(1) {
+     background-color: darkorange;
+     color: red;
+     font-style: italic;
+     font-size: 25px;
+     font-weight: bold;
+ }

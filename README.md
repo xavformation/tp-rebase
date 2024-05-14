@@ -6,3 +6,4 @@ MAJ3
 MAJ4
 MAJ5
 MAJ6
+Copyright

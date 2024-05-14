@@ -1,0 +1,9 @@
+création d'un CONFLIT
+<<<<<<< HEAD
+Je modifie la ligne1 dans master
+ligne2
+=======
+ligne1
+Je modifie la ligne2
+>>>>>>> realwork
+ligne3

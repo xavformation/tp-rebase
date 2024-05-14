@@ -1,4 +1,4 @@
 création d'un CONFLIT
 Je modifie la ligne1 dans master
-ligne2
+Je modifie la ligne2 dans master
 ligne3

@@ -1,4 +1,4 @@
 création d'un CONFLIT
 ligne1
-ligne2
+Je modifie la ligne2
 ligne3
